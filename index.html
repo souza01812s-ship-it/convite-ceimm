@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Convite de Formatura | Terceiro C 2026</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <main class="stage">
+    <section class="invitation" aria-label="Convite de formatura">
+      <div class="topline"><span>CEIMM</span><span>2026</span></div>
+      <div class="ornament">✦</div>
+      <p class="eyebrow">UMA CONQUISTA. UMA NOVA HISTÓRIA.</p>
+      <h1>Formatura</h1>
+      <p class="class-name">TERCEIRO C <span>•</span> 2026</p>
+      <div class="rule"></div>
+      <p class="school">Colégio Estadual<br><strong>Maria Irmã Margarida</strong></p>
+      <button id="openButton" class="open-button" type="button"><span>✦</span> Abrir convite <span>✦</span></button>
+      <p class="hint">Toque para revelar este momento especial</p>
+    </section>
+
+    <section id="details" class="details" aria-hidden="true">
+      <div class="details-inner">
+        <p class="eyebrow">COM ALEGRIA, CONVIDAMOS VOCÊ</p>
+        <h2>Uma noite para celebrar<br><em> tudo o que conquistamos.</em></h2>
+        <p class="intro">Depois de tantos aprendizados, desafios e histórias, chegou a hora de comemorar o encerramento de um ciclo e o começo de tantos outros.</p>
+        <div class="event-info">
+          <div><span class="info-label">DATA</span><strong>11 DE DEZEMBRO DE 2026</strong></div>
+          <div><span class="info-label">HORÁRIO</span><strong>A PARTIR DAS 19H</strong></div>
+          <div><span class="info-label">LOCAL</span><strong>CENTRO DE EVENTOS</strong></div>
+        </div>
+        <p class="closing">Sua presença fará parte dessa memória. Esperamos você!</p>
+        <p class="signature">TERCEIRO C <span>✦</span> CEIMM</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-control" id="musicControl" aria-live="polite">
+    <button id="musicButton" type="button" aria-label="Pausar música" title="Pausar ou continuar música">Ⅱ</button>
+    <div class="music-meta"><span id="musicStatus">TRILHA SONORA</span><small>Supercombo · Piloto Automático</small></div>
+    <div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </div>
+  <audio id="backgroundMusic" preload="auto" loop>
+    <source src="static/audio/musica-calma.mp3" type="audio/mpeg">
+  </audio>
+  <script src="static/script.js"></script>
+</body>
+</html>
